@@ -1,0 +1,106 @@
+@media (max-width: 555px){/*одаптивность под тел*/
+    button{
+        margin: 10px;
+        display: block;
+    }
+    .boxLeft{
+        transition: 0.5s;
+        display: none; /*свернув категории, и разворачивать при нажатии на кнопку*/
+        position: absolute;
+        background-color: #111;
+        width: 30%;
+        height: 100%;
+    }
+    .boxLeft.visible{
+        display: block;
+    }
+    #info{
+        width: 62%;
+    }
+    #picLeft{
+        display: none;
+    }
+    .categoryItems{
+        width:110px;
+        font-size: 10px;
+    }
+    #boxCenter{
+        float: none; /*не притягивать к никакому краю*/
+        width: 100%; /*убираем задний фон за щет того что расширяем на весь экран контент*/
+    }
+
+    body{
+        background-size: auto;
+    }
+
+    #content{
+        max-width: 100%;
+    }
+
+    #page{ /*переключение стр. сделали по центру*/
+        margin-left: 130px;
+    }
+
+    .grid-items{ /*отодвигаем кар-ки фильмов от краев в центр*/        
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+
+        width: 160px;
+    }
+    .grid-items img{
+        width: 140px;
+    }
+    header{
+        background-color: #111;
+    }
+    #search{
+        float: none;
+        margin-right: 100px;
+        margin-top: 0px;
+    }
+    header img{
+        width: 200px;
+        text-align: center;
+    }
+    .grid-items.similar{
+        width: 110px;
+        margin-right: 1px;
+    }
+    .grid-items.similar img{
+        width: 70px;
+    }
+    #left{
+        font-size: 70%;
+    }
+    #right{
+        font-size: 50%;
+    }
+    #video{
+        display: none;
+    }
+    #videoMobile{
+        margin: 10px;
+        padding: 15px;
+        display: block;
+    }
+    .grid-items.similar h4{
+        font-size: 10px;
+    }
+    #comment textarea{
+        position: relative;/*относительное позиционирование*/
+        z-index: 99; /*положение эл-мента и нижестоящих эл-тов по оси z*/
+        margin-top: 10px;
+        outline: none; /*задаем внешю границу эл-та*/ 
+        color: #777;
+        background-color: #1c1c1c;
+        padding: 15px;
+        border: 1px solid #252525;
+        height: 110px;
+        width: 365px;
+        font-size: 13px;
+        color: #bbb;
+        font-family: Verdana, Geneva, sans-serif;
+        overflow: auto;
+    }
+}

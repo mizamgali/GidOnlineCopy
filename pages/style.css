@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    flex-direction: column; /*ставим элементы(flex) в колонку*/
+
+    background-color: #000;
+    background-repeat: no-repeat; /*убираем повторение картинки*/
+    background-size: cover; /*размер во весь экран*/
+    background-attachment: fixed; /*убираем скролл фона*/
+}
+
+#boxLeft {
+    width: 20%;
+    height: 100%;
+
+    float: left;
+
+    background-color: #111;
+}
+#boxCenter {
+    width: 80%;
+    height: 100%;
+
+    float: right;
+
+    background-color: #000;
+}
+
+
+#content {
+    max-width: 900px;
+    width: 100℅;
+    margin: 0 auto;
+
+    background-color: #111;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+
+    position: relative;
+
+    background-color: #000;
+}
+
+#grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.grid-items {
+    width: 200px;
+    margin-top: 5px;
+
+    text-align: center;
+
+    background-color: #222;
+}
+
+#another {
+    margin: 20px auto;
+    width: 150px;
+
+    position: fixed;
+}
+
+#another img {
+    width: 130px;
+}
+
+#another h3 {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.grid-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-items img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.grid-items h4 {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+#categoryGrid {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px;
+}
+
+.categoryItems {
+    color: white;
+    text-decoration: none;
+    background-color: #222;
+
+    margin-top: 5px;
+
+    padding: 5px;
+    font-weight: 300px;
+
+    border: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.categoryItems:hover {
+    transition: 0.5s;
+    background-color: rgb(210, 216, 226);
+}
+

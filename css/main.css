@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    flex-direction: column; /*ставим элементы(flex) в колонку*/
+
+    background-color: black;
+    background-repeat: no-repeat; /*убираем повторение картинки*/
+    background-size: cover; /*размер во весь экран*/
+    background-attachment: fixed; /*убираем скролл фона*/
+}
